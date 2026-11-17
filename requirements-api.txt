@@ -1,0 +1,8 @@
+# Runtime-only dependencies for the deployed API (the full pipeline uses requirements.txt).
+# duckdb must match the version that wrote data/processed/analytics.duckdb.
+fastapi==0.162.4
+uvicorn[standard]==0.54.0
+pydantic==2.14.3
+duckdb==2.0.0
+pandas==3.1.1
+numpy==2.5.4

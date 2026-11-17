@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-bg: #070b16;
+  --color-panel: #0d1324;
+  --color-panel-2: #121a30;
+  --color-line: #1e2742;
+  --color-ink: #e7ecf7;
+  --color-dim: #8b95b2;
+  --color-faint: #5b6585;
+
+  --color-brand: #f43f5e;
+  --color-brand-2: #fb7185;
+  --color-gold: #fbbf24;
+  --color-sky: #38bdf8;
+  --color-emerald: #34d399;
+  --color-violet: #a78bfa;
+
+  --color-p-low: #475569;
+  --color-p-mod: #38bdf8;
+  --color-p-high: #f59e0b;
+  --color-p-ext: #f43f5e;
+}
+
+/* Light theme: same tokens, light values. Accent hues are deepened for contrast on white. */
+html.light {
+  --color-bg: #f4f6fb;
+  --color-panel: #ffffff;
+  --color-panel-2: #eef1f7;
+  --color-line: #dde2ee;
+  --color-ink: #0f172a;
+  --color-dim: #4b5568;
+  --color-faint: #7c879f;
+  --color-brand-2: #e11d48;
+  --color-gold: #b45309;
+  --color-sky: #0284c7;
+  --color-emerald: #059669;
+  --color-violet: #7c3aed;
+  --glass-a: rgba(255, 255, 255, 0.92);
+  --glass-b: rgba(250, 251, 254, 0.92);
+  --chart-grid: #e6eaf2;
+  --chart-text: #64708a;
+  --scroll-thumb: #cdd4e3;
+  --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04), 0 12px 32px -20px rgba(15, 23, 42, 0.25);
+  color-scheme: light;
+}
+:root {
+  --glass-a: rgba(18, 26, 48, 0.85);
+  --glass-b: rgba(13, 19, 36, 0.85);
+  --chart-grid: #1b2440;
+  --chart-text: #8b95b2;
+  --scroll-thumb: #232d4d;
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 20px 40px -24px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
+html, body, #root { height: 100%; }
+html { transition: background-color 0.2s ease; }
+body {
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(244, 63, 94, 0.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(56, 189, 248, 0.08), transparent 60%),
+    var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.tabular { font-variant-numeric: tabular-nums; }
+.glass {
+  background: linear-gradient(180deg, var(--glass-a), var(--glass-b));
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-card);
+}
+.scroll-thin::-webkit-scrollbar { height: 8px; width: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 8px; }
+.recharts-cartesian-grid line { stroke: var(--chart-grid); }
+.recharts-text { fill: var(--chart-text); font-size: 11px; }
+.recharts-legend-item-text { color: var(--color-dim) !important; font-size: 12px; }

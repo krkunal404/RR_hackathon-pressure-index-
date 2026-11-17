@@ -1,0 +1,1324 @@
+{
+  "generated_at": "2026-11-17T15:51:14",
+  "audit": {
+    "rows": {
+      "ball_by_ball": 200999,
+      "matches": 883,
+      "competitions": 141,
+      "teams": 353,
+      "playing_eleven": 28381,
+      "competition_team_player_mapping": 6413
+    },
+    "bbb_matches": 867,
+    "matches_without_bbb": 16,
+    "bbb_without_match": 0,
+    "duplicate_deliveries": 0,
+    "super_over_deliveries": 38,
+    "extras_type_counts": {
+      "none": 189167,
+      "wide": 7714,
+      "legbyes": 2748,
+      "Overstep": 576,
+      "byes": 529,
+      "other": 264,
+      "Penalty": 1
+    },
+    "extras_runs_by_type": {
+      "Overstep": "1-1 (mean 1.00)",
+      "Penalty": "5-5 (mean 5.00)",
+      "byes": "1-5 (mean 1.89)",
+      "legbyes": "0-5 (mean 1.31)",
+      "other": "1-1 (mean 1.00)",
+      "wide": "1-5 (mean 1.19)"
+    },
+    "extra_runs_total": 14623,
+    "dismissal_counts": {
+      "Caught": 7557,
+      "Bowled": 1775,
+      "LBW": 709,
+      "RunOut": 600,
+      "Stump": 214,
+      "Hit Wicket": 17,
+      "Retire Out": 6,
+      "Obstracting the field": 2,
+      "Obstructing the field": 1
+    },
+    "ids_with_multiple_names": 0,
+    "names_with_multiple_ids": [
+      "Abdul Samad",
+      "Basil Hameed",
+      "Haider Ali"
+    ],
+    "missing_values_bbb": {
+      "dismissal_type_id": 190118,
+      "dismissal_type": 190118,
+      "dismissed_player_id": 190107,
+      "extras_type": 189167,
+      "stroke": 6158,
+      "delivery_style": 391,
+      "over_or_around": 407
+    },
+    "matches_no_result": 40,
+    "matches_dls": 23
+  },
+  "accounting_checks": {
+    "margin_reconstruction": {
+      "matches": 377,
+      "exact": 0.9973474801061007,
+      "within_3": 1.0,
+      "within_7": 1.0,
+      "mean_error": -0.002652519893899204,
+      "median_abs_error": 0.0
+    },
+    "overs_with_more_than_6_legal": 1,
+    "overs_total": 31208,
+    "share_overs_exactly_6_legal": 0.9820238400410152,
+    "wides_counted_as_ball_faced": 0,
+    "illegal_counted_legal": 0,
+    "byes_charged_to_bowler": 0,
+    "runouts_credited_to_bowler": 0,
+    "bowler_wkts_not_team_wkts": 0,
+    "wickets_per_innings_max": 10,
+    "leakage_runs_before_mismatch": 0,
+    "leakage_wkts_before_mismatch": 0,
+    "deliveries": 193988,
+    "matches": 837
+  },
+  "win_probability": {
+    "innings_1": {
+      "auc": 0.6849529145388644,
+      "brier": 0.22387819320589758,
+      "log_loss": 0.6392759380661541,
+      "n": 97207,
+      "calibration": [
+        {
+          "pred": 0.0559,
+          "obs": 0.1197,
+          "n": 1913
+        },
+        {
+          "pred": 0.1565,
+          "obs": 0.1858,
+          "n": 4521
+        },
+        {
+          "pred": 0.2548,
+          "obs": 0.2724,
+          "n": 8018
+        },
+        {
+          "pred": 0.3517,
+          "obs": 0.367,
+          "n": 11414
+        },
+        {
+          "pred": 0.4553,
+          "obs": 0.4566,
+          "n": 18214
+        },
+        {
+          "pred": 0.5479,
+          "obs": 0.5532,
+          "n": 23055
+        },
+        {
+          "pred": 0.6447,
+          "obs": 0.6464,
+          "n": 16877
+        },
+        {
+          "pred": 0.7435,
+          "obs": 0.6971,
+          "n": 9198
+        },
+        {
+          "pred": 0.84,
+          "obs": 0.7953,
+          "n": 3400
+        },
+        {
+          "pred": 0.9234,
+          "obs": 0.8224,
+          "n": 597
+        }
+      ],
+      "holdout_2025_26_auc": 0.6952213901000427,
+      "holdout_2025_26_brier": 0.23046327643414374,
+      "logistic_benchmark_auc_in_sample": 0.6966826426346056,
+      "logistic_benchmark_brier_in_sample": 0.2204002195667186
+    },
+    "innings_2": {
+      "auc": 0.8969354744103233,
+      "brier": 0.13071184524558785,
+      "log_loss": 0.40394537475864095,
+      "n": 89392,
+      "calibration": [
+        {
+          "pred": 0.0299,
+          "obs": 0.0431,
+          "n": 21427
+        },
+        {
+          "pred": 0.1488,
+          "obs": 0.1779,
+          "n": 7672
+        },
+        {
+          "pred": 0.2488,
+          "obs": 0.2771,
+          "n": 6814
+        },
+        {
+          "pred": 0.3502,
+          "obs": 0.3658,
+          "n": 6407
+        },
+        {
+          "pred": 0.449,
+          "obs": 0.4559,
+          "n": 5495
+        },
+        {
+          "pred": 0.5499,
+          "obs": 0.5182,
+          "n": 4772
+        },
+        {
+          "pred": 0.6502,
+          "obs": 0.659,
+          "n": 5105
+        },
+        {
+          "pred": 0.7533,
+          "obs": 0.7318,
+          "n": 5816
+        },
+        {
+          "pred": 0.8518,
+          "obs": 0.8188,
+          "n": 8422
+        },
+        {
+          "pred": 0.9703,
+          "obs": 0.9523,
+          "n": 17462
+        }
+      ],
+      "holdout_2025_26_auc": 0.9141972578016744,
+      "holdout_2025_26_brier": 0.12358299894584103,
+      "logistic_benchmark_auc_in_sample": 0.8997418785073157,
+      "logistic_benchmark_brier_in_sample": 0.12846342784729473
+    }
+  },
+  "pressure_validity": {
+    "by_category": [
+      {
+        "pcat_bat": "Low",
+        "deliveries": 96992,
+        "runs_per_ball": 1.3723,
+        "wicket_rate": 0.0559,
+        "dot_rate": 0.3515,
+        "boundary_rate": 0.1852,
+        "mean_leverage": 0.0471,
+        "close_match_share": 0.2242,
+        "knockout_share": 0.0234,
+        "mean_wp": 0.5014
+      },
+      {
+        "pcat_bat": "Moderate",
+        "deliveries": 48498,
+        "runs_per_ball": 1.3293,
+        "wicket_rate": 0.0509,
+        "dot_rate": 0.3662,
+        "boundary_rate": 0.1815,
+        "mean_leverage": 0.1177,
+        "close_match_share": 0.3231,
+        "knockout_share": 0.025,
+        "mean_wp": 0.4732
+      },
+      {
+        "pcat_bat": "High",
+        "deliveries": 29099,
+        "runs_per_ball": 1.3266,
+        "wicket_rate": 0.0513,
+        "dot_rate": 0.3573,
+        "boundary_rate": 0.1788,
+        "mean_leverage": 0.1679,
+        "close_match_share": 0.3628,
+        "knockout_share": 0.0417,
+        "mean_wp": 0.4898
+      },
+      {
+        "pcat_bat": "Extreme",
+        "deliveries": 19399,
+        "runs_per_ball": 1.2841,
+        "wicket_rate": 0.0567,
+        "dot_rate": 0.3469,
+        "boundary_rate": 0.1589,
+        "mean_leverage": 0.2485,
+        "close_match_share": 0.4197,
+        "knockout_share": 0.0598,
+        "mean_wp": 0.4886
+      }
+    ],
+    "pressure_share_by_phase": {
+      "1": {
+        "Death": 0.2459,
+        "Middle": 0.2569,
+        "Powerplay": 0.2432
+      },
+      "2": {
+        "Death": 0.226,
+        "Middle": 0.2702,
+        "Powerplay": 0.2352
+      }
+    },
+    "death_over_pressure_share": 0.237635986675053,
+    "decided_death_balls_pressure_share": 0.006398005816368924,
+    "decided_death_balls": 12035,
+    "extreme_examples": [
+      {
+        "match_id": 21586,
+        "match_date": "2023-05-29",
+        "batting_team": "Chennai Super Kings",
+        "bowling_team": "Gujarat Titans",
+        "innings": 2,
+        "overid": 15,
+        "over_ball_num": 1,
+        "runs_before": 158,
+        "wkts_before": 5,
+        "target": 171.0,
+        "runs_needed": 13.0,
+        "balls_left": 6,
+        "rrr": 13.0,
+        "wp_before": 0.526,
+        "leverage": 0.449,
+        "pressure_bat": 100.0,
+        "striker_name": "Shivam Dube",
+        "bowler_name": "Mohit Sharma",
+        "bat_runs": 0,
+        "team_wicket": false
+      },
+      {
+        "match_id": 29982,
+        "match_date": "2024-02-21",
+        "batting_team": "Australia",
+        "bowling_team": "New Zealand",
+        "innings": 2,
+        "overid": 20,
+        "over_ball_num": 4,
+        "runs_before": 203,
+        "wkts_before": 4,
+        "target": 216.0,
+        "runs_needed": 13.0,
+        "balls_left": 4,
+        "rrr": 19.5,
+        "wp_before": 0.498,
+        "leverage": 0.591,
+        "pressure_bat": 99.995,
+        "striker_name": "Mitchell Marsh",
+        "bowler_name": "Tim Southee",
+        "bat_runs": 0,
+        "team_wicket": false
+      },
+      {
+        "match_id": 15188,
+        "match_date": "2022-05-25",
+        "batting_team": "Lucknow Super Giants",
+        "bowling_team": "Royal Challengers Bengaluru",
+        "innings": 2,
+        "overid": 18,
+        "over_ball_num": 6,
+        "runs_before": 173,
+        "wkts_before": 4,
+        "target": 208.0,
+        "runs_needed": 35.0,
+        "balls_left": 15,
+        "rrr": 14.0,
+        "wp_before": 0.476,
+        "leverage": 0.382,
+        "pressure_bat": 99.993,
+        "striker_name": "Evin Lewis",
+        "bowler_name": "Harshal Patel",
+        "bat_runs": 1,
+        "team_wicket": false
+      },
+      {
+        "match_id": 20210,
+        "match_date": "2023-04-22",
+        "batting_team": "Lucknow Super Giants",
+        "bowling_team": "Gujarat Titans",
+        "innings": 2,
+        "overid": 20,
+        "over_ball_num": 3,
+        "runs_before": 126,
+        "wkts_before": 4,
+        "target": 136.0,
+        "runs_needed": 10.0,
+        "balls_left": 4,
+        "rrr": 15.0,
+        "wp_before": 0.495,
+        "leverage": 0.474,
+        "pressure_bat": 99.991,
+        "striker_name": "Marcus Stoinis",
+        "bowler_name": "Mohit Sharma",
+        "bat_runs": 0,
+        "team_wicket": true
+      },
+      {
+        "match_id": 40745,
+        "match_date": "2025-05-03",
+        "batting_team": "Chennai Super Kings",
+        "bowling_team": "Royal Challengers Bengaluru",
+        "innings": 2,
+        "overid": 20,
+        "over_ball_num": 6,
+        "runs_before": 209,
+        "wkts_before": 5,
+        "target": 214.0,
+        "runs_needed": 5.0,
+        "balls_left": 2,
+        "rrr": 15.0,
+        "wp_before": 0.512,
+        "leverage": 0.972,
+        "pressure_bat": 99.99,
+        "striker_name": "Ravindra Jadeja",
+        "bowler_name": "Yash Dayal",
+        "bat_runs": 1,
+        "team_wicket": false
+      },
+      {
+        "match_id": 14123,
+        "match_date": "2022-04-18",
+        "batting_team": "Kolkata Knight Riders",
+        "bowling_team": "Rajasthan Royals",
+        "innings": 2,
+        "overid": 19,
+        "over_ball_num": 7,
+        "runs_before": 207,
+        "wkts_before": 8,
+        "target": 218.0,
+        "runs_needed": 11.0,
+        "balls_left": 7,
+        "rrr": 9.429,
+        "wp_before": 0.494,
+        "leverage": 0.842,
+        "pressure_bat": 99.988,
+        "striker_name": "Umesh Yadav",
+        "bowler_name": "Prasidh Krishna",
+        "bat_runs": 0,
+        "team_wicket": false
+      },
+      {
+        "match_id": 31268,
+        "match_date": "2024-05-02",
+        "batting_team": "Rajasthan Royals",
+        "bowling_team": "Sunrisers Hyderabad",
+        "innings": 2,
+        "overid": 20,
+        "over_ball_num": 1,
+        "runs_before": 189,
+        "wkts_before": 6,
+        "target": 202.0,
+        "runs_needed": 13.0,
+        "balls_left": 6,
+        "rrr": 13.0,
+        "wp_before": 0.514,
+        "leverage": 0.593,
+        "pressure_bat": 99.987,
+        "striker_name": "Ravichandran Ashwin",
+        "bowler_name": "Bhuvneshwar Kumar",
+        "bat_runs": 1,
+        "team_wicket": false
+      },
+      {
+        "match_id": 50379,
+        "match_date": "2026-05-14",
+        "batting_team": "Mumbai Indians",
+        "bowling_team": "Punjab Kings",
+        "innings": 2,
+        "overid": 20,
+        "over_ball_num": 4,
+        "runs_before": 193,
+        "wkts_before": 4,
+        "target": 201.0,
+        "runs_needed": 8.0,
+        "balls_left": 3,
+        "rrr": 16.0,
+        "wp_before": 0.521,
+        "leverage": 0.814,
+        "pressure_bat": 99.986,
+        "striker_name": "Namboori Tilak Varma",
+        "bowler_name": "Xavier Bartlett",
+        "bat_runs": 6,
+        "team_wicket": false
+      },
+      {
+        "match_id": 28057,
+        "match_date": "2023-12-07",
+        "batting_team": "Zimbabwe",
+        "bowling_team": "Ireland",
+        "innings": 2,
+        "overid": 19,
+        "over_ball_num": 6,
+        "runs_before": 137,
+        "wkts_before": 8,
+        "target": 148.0,
+        "runs_needed": 11.0,
+        "balls_left": 8,
+        "rrr": 8.25,
+        "wp_before": 0.489,
+        "leverage": 0.598,
+        "pressure_bat": 99.985,
+        "striker_name": "Richard Ngarava",
+        "bowler_name": "Mark Adair",
+        "bat_runs": 1,
+        "team_wicket": false
+      },
+      {
+        "match_id": 45512,
+        "match_date": "2025-09-26",
+        "batting_team": "Sri Lanka",
+        "bowling_team": "India",
+        "innings": 2,
+        "overid": 20,
+        "over_ball_num": 3,
+        "runs_before": 193,
+        "wkts_before": 5,
+        "target": 203.0,
+        "runs_needed": 10.0,
+        "balls_left": 4,
+        "rrr": 15.0,
+        "wp_before": 0.48,
+        "leverage": 0.462,
+        "pressure_bat": 99.984,
+        "striker_name": "Janith Liyanage",
+        "bowler_name": "Harshit Rana",
+        "bat_runs": 0,
+        "team_wicket": false
+      },
+      {
+        "match_id": 20221,
+        "match_date": "2023-04-30",
+        "batting_team": "Punjab Kings",
+        "bowling_team": "Chennai Super Kings",
+        "innings": 2,
+        "overid": 20,
+        "over_ball_num": 5,
+        "runs_before": 196,
+        "wkts_before": 6,
+        "target": 201.0,
+        "runs_needed": 5.0,
+        "balls_left": 2,
+        "rrr": 15.0,
+        "wp_before": 0.474,
+        "leverage": 0.983,
+        "pressure_bat": 99.982,
+        "striker_name": "Sikandar Raza",
+        "bowler_name": "Matheesha Pathirana",
+        "bat_runs": 2,
+        "team_wicket": false
+      },
+      {
+        "match_id": 34429,
+        "match_date": "2024-07-30",
+        "batting_team": "Sri Lanka",
+        "bowling_team": "India",
+        "innings": 2,
+        "overid": 20,
+        "over_ball_num": 3,
+        "runs_before": 132,
+        "wkts_before": 7,
+        "target": 138.0,
+        "runs_needed": 6.0,
+        "balls_left": 4,
+        "rrr": 9.0,
+        "wp_before": 0.524,
+        "leverage": 0.834,
+        "pressure_bat": 99.979,
+        "striker_name": "Maheesh Theekshana",
+        "bowler_name": "Suryakumar Yadav",
+        "bat_runs": 0,
+        "team_wicket": true
+      }
+    ],
+    "low_pressure_death_examples": [
+      {
+        "match_id": 33806,
+        "batting_team": "India",
+        "bowling_team": "Zimbabwe",
+        "overid": 16,
+        "runs_needed": 2.0,
+        "balls_left": 30,
+        "wkts_before": 0,
+        "wp_before": 1.0,
+        "pressure_bat": 0.002
+      },
+      {
+        "match_id": 17625,
+        "batting_team": "India",
+        "bowling_team": "South Africa",
+        "overid": 17,
+        "runs_needed": 4.0,
+        "balls_left": 22,
+        "wkts_before": 2,
+        "wp_before": 1.0,
+        "pressure_bat": 0.005
+      },
+      {
+        "match_id": 36096,
+        "batting_team": "West Indies",
+        "bowling_team": "South Africa",
+        "overid": 18,
+        "runs_needed": 3.0,
+        "balls_left": 17,
+        "wkts_before": 2,
+        "wp_before": 1.0,
+        "pressure_bat": 0.008
+      },
+      {
+        "match_id": 24354,
+        "batting_team": "West Indies",
+        "bowling_team": "India",
+        "overid": 18,
+        "runs_needed": 3.0,
+        "balls_left": 16,
+        "wkts_before": 2,
+        "wp_before": 1.0,
+        "pressure_bat": 0.009
+      },
+      {
+        "match_id": 50358,
+        "batting_team": "Gujarat Titans",
+        "bowling_team": "Chennai Super Kings",
+        "overid": 16,
+        "runs_needed": 11.0,
+        "balls_left": 25,
+        "wkts_before": 1,
+        "wp_before": 1.0,
+        "pressure_bat": 0.021
+      },
+      {
+        "match_id": 50345,
+        "batting_team": "Punjab Kings",
+        "bowling_team": "Mumbai Indians",
+        "overid": 16,
+        "runs_needed": 12.0,
+        "balls_left": 28,
+        "wkts_before": 2,
+        "wp_before": 1.0,
+        "pressure_bat": 0.037
+      }
+    ]
+  },
+  "temporal_stability": {
+    "batters": {
+      "players_in_both": 77,
+      "rating_spearman": 0.14109574635890423,
+      "component_spearman": {
+        "scoring": 0.229112992270887,
+        "survival": 0.23182081076817915,
+        "impact": -0.10802355539197643,
+        "uplift": 0.12379725537620273,
+        "consistency": 0.004596914815013982
+      }
+    },
+    "bowlers": {
+      "players_in_both": 72,
+      "rating_spearman": 0.2034214418933694,
+      "component_spearman": {
+        "economy": 0.18403112740369157,
+        "wickets": 0.11836774069071969,
+        "impact": 0.18882243231075957,
+        "uplift": -0.002347417840375587,
+        "consistency": 0.040082814285214714
+      }
+    }
+  },
+  "sensitivity": [
+    {
+      "scenario": "Pressure threshold >= 65",
+      "group": "Pressure threshold",
+      "batters": {
+        "spearman": 0.8737997957099082,
+        "top10_overlap": 8,
+        "baseline_top10_ranks": [
+          1,
+          4,
+          2,
+          3,
+          5,
+          10,
+          38,
+          9,
+          17,
+          6
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.8992420399271879,
+        "top10_overlap": 8,
+        "baseline_top10_ranks": [
+          1,
+          3,
+          4,
+          2,
+          5,
+          10,
+          7,
+          11,
+          9,
+          25
+        ]
+      }
+    },
+    {
+      "scenario": "Pressure threshold >= 70",
+      "group": "Pressure threshold",
+      "batters": {
+        "spearman": 0.9259107933265238,
+        "top10_overlap": 6,
+        "baseline_top10_ranks": [
+          1,
+          5,
+          4,
+          3,
+          2,
+          15,
+          21,
+          17,
+          11,
+          6
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.9445555190832858,
+        "top10_overlap": 8,
+        "baseline_top10_ranks": [
+          1,
+          3,
+          2,
+          5,
+          4,
+          11,
+          7,
+          12,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "scenario": "Pressure threshold >= 80",
+      "group": "Pressure threshold",
+      "batters": {
+        "spearman": 0.8836363636363636,
+        "top10_overlap": 6,
+        "baseline_top10_ranks": [
+          -1,
+          1,
+          5,
+          3,
+          4,
+          -1,
+          12,
+          8,
+          18,
+          6
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.89297173886215,
+        "top10_overlap": 8,
+        "baseline_top10_ranks": [
+          2,
+          3,
+          1,
+          4,
+          8,
+          16,
+          13,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "scenario": "Pressure threshold >= 85",
+      "group": "Pressure threshold",
+      "batters": {
+        "spearman": 0.8410564225690276,
+        "top10_overlap": 5,
+        "baseline_top10_ranks": [
+          -1,
+          -1,
+          3,
+          2,
+          1,
+          -1,
+          5,
+          -1,
+          9,
+          -1
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.8765008576329331,
+        "top10_overlap": 8,
+        "baseline_top10_ranks": [
+          2,
+          5,
+          1,
+          3,
+          4,
+          11,
+          8,
+          17,
+          7,
+          9
+        ]
+      }
+    },
+    {
+      "scenario": "Equal component weights",
+      "group": "Rating weights",
+      "batters": {
+        "spearman": 0.985631596867552,
+        "top10_overlap": 9,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          5,
+          3,
+          6,
+          7,
+          4,
+          10,
+          9,
+          11
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.9905404195637252,
+        "top10_overlap": 10,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          8,
+          5,
+          9,
+          6,
+          7,
+          10
+        ]
+      }
+    },
+    {
+      "scenario": "Performance-heavy (no uplift/consistency)",
+      "group": "Rating weights",
+      "batters": {
+        "spearman": 0.9915389853592103,
+        "top10_overlap": 9,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          7,
+          11,
+          9
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.993390230073707,
+        "top10_overlap": 9,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          5,
+          4,
+          8,
+          6,
+          10,
+          11,
+          7
+        ]
+      }
+    },
+    {
+      "scenario": "Impact-heavy (WPA 40%)",
+      "group": "Rating weights",
+      "batters": {
+        "spearman": 0.9871637725570311,
+        "top10_overlap": 9,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          5,
+          3,
+          4,
+          7,
+          6,
+          9,
+          10,
+          13
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.989570588761899,
+        "top10_overlap": 10,
+        "baseline_top10_ranks": [
+          2,
+          1,
+          3,
+          5,
+          6,
+          4,
+          10,
+          9,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "scenario": "Stricter eligibility (200 balls, 20 matches)",
+      "group": "Eligibility",
+      "batters": {
+        "spearman": 0.9947322212467077,
+        "top10_overlap": 8,
+        "baseline_top10_ranks": [
+          -1,
+          1,
+          2,
+          3,
+          4,
+          -1,
+          9,
+          5,
+          8,
+          7
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.9997206480964165,
+        "top10_overlap": 10,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "scenario": "Looser eligibility (100 balls, 10 matches)",
+      "group": "Eligibility",
+      "batters": {
+        "spearman": 0.9977017364657816,
+        "top10_overlap": 8,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          13,
+          9,
+          12,
+          10
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.9999701590522514,
+        "top10_overlap": 10,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "scenario": "Pressure formula: Leverage only",
+      "group": "Pressure formula",
+      "batters": {
+        "spearman": 0.8254061542336594,
+        "top10_overlap": 7,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          11,
+          21,
+          5,
+          18,
+          8
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.8671069390065569,
+        "top10_overlap": 7,
+        "baseline_top10_ranks": [
+          1,
+          3,
+          2,
+          6,
+          9,
+          13,
+          8,
+          45,
+          10,
+          24
+        ]
+      }
+    },
+    {
+      "scenario": "Pressure formula: Balanced formula 0.4/0.4/0.2",
+      "group": "Pressure formula",
+      "batters": {
+        "spearman": 0.9027032499746886,
+        "top10_overlap": 6,
+        "baseline_top10_ranks": [
+          -1,
+          4,
+          15,
+          2,
+          1,
+          3,
+          28,
+          7,
+          5,
+          14
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.9075330466634816,
+        "top10_overlap": 9,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          10,
+          5,
+          7,
+          11
+        ]
+      }
+    },
+    {
+      "scenario": "Associate T20Is full weight",
+      "group": "Competition weighting",
+      "batters": {
+        "spearman": 0.9989274770173648,
+        "top10_overlap": 10,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          9,
+          7,
+          10,
+          8
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.9966727343260421,
+        "top10_overlap": 10,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          8,
+          10
+        ]
+      }
+    },
+    {
+      "scenario": "Associate T20Is weight 0.3",
+      "group": "Competition weighting",
+      "batters": {
+        "spearman": 0.9993190330268984,
+        "top10_overlap": 8,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          4,
+          3,
+          5,
+          6,
+          7,
+          11,
+          8,
+          12
+        ]
+      },
+      "bowlers": {
+        "spearman": 0.9984035092954551,
+        "top10_overlap": 10,
+        "baseline_top10_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    }
+  ],
+  "spot_check": {
+    "top_batter": {
+      "name": "Vaibhav Sooryavanshi",
+      "pipeline_runs": 391,
+      "manual_runs": 391,
+      "pipeline_balls": 164,
+      "manual_balls": 164
+    },
+    "top_bowler": {
+      "name": "Krunal Pandya",
+      "pipeline_runs": 363,
+      "manual_runs": 363,
+      "pipeline_legal_balls": 341,
+      "manual_legal_balls": 341,
+      "pipeline_wkts": 21,
+      "manual_wkts": 21
+    }
+  },
+  "batter_meta": {
+    "k": {
+      "score": 164.91505273181934,
+      "surv": 663.1052342111476,
+      "imp": 1675.0532950883446,
+      "val": 467.7106586366067
+    },
+    "lambda": 9.800672374311814,
+    "uplift_tau2": 0.0046762211990565294,
+    "uplift_reliability_at_200_balls": 0.06219796164097941,
+    "prior_consistency": 0.5793581960104076,
+    "consistency_prior_strength": 200.0,
+    "eligible": 89,
+    "pool": 824,
+    "component_mean": {
+      "scoring": 0.02293,
+      "survival": 0.00159,
+      "impact": 0.00021,
+      "uplift": -0.00066,
+      "consistency": 0.57937
+    },
+    "component_sd_raw": {
+      "scoring": 0.1659,
+      "survival": 0.01347,
+      "impact": 0.00318,
+      "uplift": 0.22752,
+      "consistency": 0.1002
+    },
+    "component_signal_share": {
+      "scoring": 0.573,
+      "survival": 0.31,
+      "impact": 0.143,
+      "uplift": 0.092,
+      "consistency": 0.105
+    }
+  },
+  "bowler_meta": {
+    "k": {
+      "score": 358.1049199909603,
+      "surv": 3000.0,
+      "imp": 3000.0,
+      "val": 1252.8425507157403
+    },
+    "lambda": 9.800672374311814,
+    "uplift_tau2": 1e-09,
+    "uplift_reliability_at_200_balls": 1.4937242012769764e-08,
+    "prior_consistency": 0.4500180440274269,
+    "consistency_prior_strength": 132.91382408373698,
+    "eligible": 93,
+    "pool": 596,
+    "component_mean": {
+      "economy": 0.01002,
+      "wickets": 1e-05,
+      "impact": -1e-05,
+      "uplift": -0.0,
+      "consistency": 0.44959
+    },
+    "component_sd_raw": {
+      "economy": 0.12782,
+      "wickets": 0.0134,
+      "impact": 0.00389,
+      "uplift": 0.19782,
+      "consistency": 0.10256
+    },
+    "component_signal_share": {
+      "economy": 0.45,
+      "wickets": 0.091,
+      "impact": 0.089,
+      "uplift": 0.0,
+      "consistency": 0.181
+    }
+  },
+  "wicket_run_value": 9.800672374311814,
+  "config": {
+    "AUCTION_MIN_LAST_SEASON": 2,
+    "AUCTION_TEAM": "Rajasthan Royals",
+    "BOOTSTRAP_REPS": 300,
+    "BOPPI_WEIGHTS": {
+      "economy": 0.3,
+      "wickets": 0.2,
+      "impact": 0.2,
+      "uplift": 0.15,
+      "consistency": 0.15
+    },
+    "BOWLER_CHARGED_EXTRAS": "{'Overstep', 'other', 'wide'}",
+    "BOWLER_CREDITED_DISMISSALS": "{'Stump', 'LBW', 'Caught', 'Hit Wicket', 'Bowled'}",
+    "BOWLING_SPELL_WEIGHT": 0.15,
+    "BPPI_WEIGHTS": {
+      "scoring": 0.3,
+      "survival": 0.2,
+      "impact": 0.2,
+      "uplift": 0.15,
+      "consistency": 0.15
+    },
+    "BYE_EXTRAS": "{'legbyes', 'byes'}",
+    "COMPETITION_WEIGHTS": {
+      "IPL": 1.0,
+      "T20I_FULL": 1.0,
+      "T20I_ASSOC": 0.6
+    },
+    "FULL_MEMBERS": "{'New Zealand', 'Afghanistan', 'Sri Lanka', 'West Indies', 'India', 'England', 'Ireland', 'Zimbabwe', 'Australia', 'Bangladesh', 'South Africa', 'Pakistan'}",
+    "ILLEGAL_EXTRAS": "{'Overstep', 'other', 'wide'}",
+    "IN_SCOPE_FORMATS": "{'T20I'}",
+    "IPL_INELIGIBLE_NATIONS": "{'Pakistan'}",
+    "IPL_PREFIX": "IPL",
+    "KNOCKOUT_MULTIPLIER": 1.15,
+    "MIN_BALLS_IN_MATCH_FOR_CONSISTENCY": 4,
+    "MIN_PRESSURE_BALLS_BAT": 150,
+    "MIN_PRESSURE_BALLS_BOWL": 150,
+    "MIN_PRESSURE_MATCHES": 15,
+    "NON_BATTER_FAULT_DISMISSALS": "{'Retire Out'}",
+    "NO_BALL_EXTRAS": "{'other', 'Overstep'}",
+    "PENALTY_RUNS": 5,
+    "PRESSURE_BINS": [
+      0,
+      50,
+      75,
+      90,
+      100.0001
+    ],
+    "PRESSURE_LABELS": [
+      "Low",
+      "Moderate",
+      "High",
+      "Extreme"
+    ],
+    "PRESSURE_THRESHOLD": 75,
+    "PRESSURE_WEIGHTS": {
+      "leverage": 0.55,
+      "closeness": 0.3,
+      "stress": 0.15
+    },
+    "SEED": 42
+  },
+  "overview": {
+    "matches": 837,
+    "deliveries": 193988,
+    "ipl_matches": 367,
+    "t20i_matches": 470,
+    "batters": 824,
+    "bowlers": 596,
+    "players": 892,
+    "pressure_deliveries": 48498,
+    "extreme_deliveries": 19399,
+    "high_deliveries": 29099,
+    "eligible_batters": 89,
+    "eligible_bowlers": 93,
+    "seasons": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "auction": {
+    "team": "Rajasthan Royals",
+    "ineligible_nations": [
+      "Pakistan"
+    ],
+    "min_last_season": 2025,
+    "excluded": {
+      "batters": {
+        "ineligible_nation": [
+          "Babar Azam",
+          "Mohammad Nawaz",
+          "Fakhar Zaman",
+          "Mohammad Rizwan",
+          "Iftikhar Ahmed",
+          "Salman Agha",
+          "Saim Ayub"
+        ],
+        "inactive": [
+          "Wriddhiman Saha",
+          "Shikhar Dhawan",
+          "Dinesh Karthik",
+          "David Warner",
+          "Matthew Wade",
+          "Kane Williamson"
+        ]
+      },
+      "bowlers": {
+        "ineligible_nation": [
+          "Mohammad Nawaz",
+          "Shadab Khan",
+          "Abrar Ahmed",
+          "Shaheen Afridi",
+          "Haris Rauf",
+          "Saim Ayub",
+          "Naseem Shah"
+        ],
+        "inactive": [
+          "Naveen ul Haq",
+          "Umran Malik"
+        ]
+      }
+    }
+  }
+}
