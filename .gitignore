@@ -1,0 +1,52 @@
+# ---- Python -----------------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# ---- Node / frontend ----------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+
+# ---- Local-only files (raw dataset copy, brief, slides, Claude config) -----------
+local/
+
+# ---- Data -----------------------------------------------------------------------
+# The supplied CSVs are committed once, compressed, as data/dataset.zip.
+# The pipeline reads the zip directly; unzipped copies in data/raw/ stay local.
+data/raw/
+
+# Large generated files (regenerate with `python main.py`).
+# pressure_delivery_analysis.csv is ~133 MB, over GitHub's 100 MB file limit.
+outputs/pressure_delivery_analysis.csv
+data/processed/*.parquet
+
+# Kept in git on purpose: the deployed app reads these two files.
+#   data/processed/analytics.duckdb
+#   outputs/metrics.json
+
+# ---- Secrets: never commit ---------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials*.json
+service-account*.json
+
+# ---- Editors / OS / local tooling ----------------------------------------------
+.vscode/
+.idea/
+.claude/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
