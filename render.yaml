@@ -1,0 +1,10 @@
+# Render Blueprint: Dashboard -> New -> Blueprint, then pick this repo.
+services:
+  - type: web
+    name: pressure-index
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
